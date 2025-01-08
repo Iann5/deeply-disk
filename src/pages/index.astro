@@ -6,7 +6,6 @@ const {default:meData} = await import('../assets/me.json');
 
 <Layout>
 	<h1>{meData.name}</h1>
-	<h2>{meData.apellidos}</h2>
 	<h2>Edad: {meData.edad}</h2>
 	<h2>Info:</h2>
 	<p>{meData.descripcion}</p>
@@ -20,8 +19,9 @@ const {default:meData} = await import('../assets/me.json');
 	<p>Puesto de trabajo: {meData.experiencia[0].puesto}</p>
 	<p>Tiempo en la empresa: {meData.experiencia[0].tiempo}</p>
 	<h2>Habilidades:</h2>
-	<p>Habilidad: {meData.pros[0].habilidades}</p>
-	<p>Idiomas: {meData.pros[0].idiomas1}</p>
-	<p>Idiomas: {meData.pros[0].idiomas2}</p>
+	<p>{meData.pros[0].habilidades}</p>
+	<h4>Idiomas:</h4>
+	<p>	{meData.pros[0].idiomas1}</p>
+	<p>	{meData.pros[0].idiomas2}</p>
 	
 </Layout>
