@@ -5,23 +5,42 @@ const {default:meData} = await import('../assets/me.json');
 ---
 
 <Layout>
-	<h1>{meData.name}</h1>
-	<h2>Edad: {meData.edad}</h2>
-	<h2>Info:</h2>
-	<p>{meData.descripcion}</p>
-	<h2>Titulación: {meData.titulos}</h2>
-	<h2>Estudiante en: {meData.estudiante}</h2>
-	<h2>Certificados:</h2>
-	<p>{meData.certificados[0]}</p>
-	<p>{meData.certificados[1]}</p>
-	<h2>Experiencia:</h2>
-	<p>Empresa: {meData.experiencia[0].nombreEmpresa}</p>
-	<p>Puesto de trabajo: {meData.experiencia[0].puesto}</p>
-	<p>Tiempo en la empresa: {meData.experiencia[0].tiempo}</p>
+	<section class="hero">
+	<h1 class="nombre">{meData.name}</h1>
+	<h2 class="info">Info:</h2>
+	<p class="bio">{meData.descripcion}</p>
+	</section>
+	<section>
+		<h2>Estudios:</h2>
+		{meData.estudios.map((exp) =>(
+			<article class="estudios">
+			<p>Titulación: {meData.estudios[0].titulos}</p>
+			<p>Estudiante en: {meData.estudios[0].estudiante}</p>
+			<p>Certificado en {meData.estudios[0].certificados}</p>
+			<p>Certificado en {meData.estudios[0].certificado}</p>
+			</article>
+		))}
+		
+		<h2>Experiencia:</h2>
+		{meData.experiencia.map((exp) => (
+			<article class="experiencia">
+			<p class="empresa">{meData.experiencia[0].nombreEmpresa}</p>
+			<p class="puesto">Puesto de trabajo: {meData.experiencia[0].puesto}</p>
+			<p class="tiempo">Tiempo en la empresa: {meData.experiencia[0].tiempo}</p>
+			</article>
+		))}
+	</section>
+	<section>
 	<h2>Habilidades:</h2>
-	<p>{meData.pros[0].habilidades}</p>
-	<h4>Idiomas:</h4>
-	<p>	{meData.pros[0].idiomas1}</p>
-	<p>	{meData.pros[0].idiomas2}</p>
-	
+	<div class="envoltura-habilidad">
+	{meData.pros.map((hab) => (
+		<article class="habilidades">
+		<p>{meData.pros[0].habilidades}</p>
+		<h3>Idiomas:</h3>
+		<p>	{meData.pros[0].idiomas1}</p>
+		<p>	{meData.pros[0].idiomas2}</p>
+		</article>
+	))}
+	</div>
+	</section>
 </Layout>
