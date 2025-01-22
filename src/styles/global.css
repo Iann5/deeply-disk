@@ -4,6 +4,7 @@ html{
 
 section{
     max-width: 900px;
+    margin-top: 84px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -43,6 +44,25 @@ section{
     font-size: 18px;
     font-weight: 300;
     line-height: 150%;
+}
+.enlace-proyecto{
+    text-decoration: none;
+    color: black;
+
+}
+.enlace-proyecto:hover{
+    color: rgb(0, 0, 0);
+}
+.proyecto{
+    padding: 16px;
+    background-color:rgb(193, 193, 193);
+    border: 1px solid;
+    border-color: dimgrey;
+    border-radius: 16px;
+    margin-top: 16px;
+}
+.proyecto:hover{
+ background-color: rgb(118, 117, 117);   
 }
 .experiencia{
     padding: 16px;
