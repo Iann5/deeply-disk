@@ -1,10 +1,19 @@
 {
     "name": "Ian Álvarez Triviño",
     "estudios": [{"titulos":"Técnico informático de Microsistemas informáticos y Redes","estudiante":"Desarrollo de aplicaciones Web","certificados":"Cisco","certificado":"OpenWebinars"}],
-    "experiencia": [{"nombreEmpresa": "Vitas", "puesto": "Becario", "tiempo": "3 meses"}],
+    "experiencia": [{"nombreEmpresa": "Hospital Vithas", "puesto": "Becario", "tiempo": "3 meses"}],
     "descripcion": "Soy Ian Álvarez Triviño, tengo 18 años, actualmente estoy estudiando Desarrollo de aplicaciones web, el mundo de la informática me gusta un monton, cuando termine este grado superior aspiro a seguir con la carrera de ingienería informática y convertirme en ingeniero informático",
-    "pros": [{"habilidades":"Buena comunicación, trabajo en equipo, maejar conflictos, paciente, tranquilo, perfeccionista, trabajador, creativo, luchador", "idiomas1": "Español y catalán: nivel nativo","idiomas2": "Ingles: nivel intermedio." }], 
-    "idiomas": ["Español y catalán: nivel nativo","Ingles: nivel intermedio."]
+    "pros": [
+        {"habilidades":"Buena comunicación"},
+        {"habilidades":"Trabajo en equipo"} , 
+        {"habilidades":"Trabajador"},
+        {"habilidades":"Perfeccionista"},
+        {"habilidades":"Creativo"}, 
+        {"habilidades":"Tranquilo"}
+    ], 
+    "idiomas": [
+        {"idioma":"Español y catalán: nivel nativo"},
+        {"idioma":"Ingles: nivel intermedio."}]
     
 
 }

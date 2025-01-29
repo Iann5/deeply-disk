@@ -2,6 +2,7 @@
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
+import "../assets/me.json"
 interface Project{
 	title: string
 	description: string
@@ -14,14 +15,17 @@ console.log(projects)
 
 <Layout>
 	<Header />
-	
-	<section class="hero">
-	<h1 class="nombre">{meData.name}</h1>
-	<h2 class="info">Info:</h2>
-	<p class="bio">{meData.descripcion}</p>
+	<section id="inicio">
+		<div class="hero">
+			<article class="hero">
+				<h1 class="nombre">{meData.name}</h1>
+				<h2 class="info">Info:</h2>
+				<p class="bio">{meData.descripcion}</p>
+			</article>
+		</div>
 	</section>
-	<section>
-		<h2>Proyectos</h2>
+	<section id="proyectos">
+		<h2 class="color_p">Proyectos</h2>
 		{projects.map((project)=>(
 		
 			<a class="enlace-proyecto" href={project.url}>
@@ -33,8 +37,8 @@ console.log(projects)
 		))
 		}
 	</section>
-	<section>
-		<h2>Estudios:</h2>
+	<section id="estudios">
+		<h2 class="color_p">Estudios:</h2>
 		{meData.estudios.map((exp) =>(
 			<article class="estudios">
 			<p>Titulación: {meData.estudios[0].titulos}</p>
@@ -43,8 +47,9 @@ console.log(projects)
 			<p>Certificado en {meData.estudios[0].certificado}</p>
 			</article>
 		))}
-		
-		<h2>Experiencia:</h2>
+	</section>
+	<section id="experiencia">
+		<h2 class="color_p">Experiencia:</h2>
 		{meData.experiencia.map((exp) => (
 			<article class="experiencia">
 			<p class="empresa">{meData.experiencia[0].nombreEmpresa}</p>
@@ -53,18 +58,18 @@ console.log(projects)
 			</article>
 		))}
 	</section>
-	<section>
-	<h2>Habilidades:</h2>
+	<section id="habilidades">
+	<h2 class="color_p">Habilidades:</h2>
 	<div class="envoltura-habilidad">
 	{meData.pros.map((hab) => (
 		<article class="habilidades">
-		<p>{meData.pros[0].habilidades}</p>
-		<h3>Idiomas:</h3>
-		<p>	{meData.pros[0].idiomas1}</p>
-		<p>	{meData.pros[0].idiomas2}</p>
+		<p class="habilidades_texto">{hab.habilidades}</p>
 		</article>
 	))}
 	</div>
+	<h3 class="color_p">Idiomas:</h3>
+	<p class="idiomas">{meData.idiomas[0].idioma}</p>
+	<p class="idiomas">{meData.idiomas[1].idioma}</p>
 	</section>
 	<Footer />
 	

@@ -1,5 +1,4 @@
 ---
-
 title: "Mi proyecto increíble"
 description: "Este proyecto ficticio teine como objetivo crear un eden digital"
 url: "localhost:4321/projects/project2"

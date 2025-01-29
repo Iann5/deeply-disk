@@ -1,5 +1,6 @@
 html{
-    font-family: "Calibri";
+    font-family: "Times New Roman";
+    background-color:rgb(12, 19, 20);
 }
 
 section{
@@ -15,7 +16,7 @@ section{
     align-items: center;
     padding: 20px; 
     gap: 32;
-    background-color: black;
+    background-color: rgb(111, 74, 56);
     color: white;
     height: fit-content;
     border-radius: 32px;
@@ -55,34 +56,42 @@ section{
 }
 .proyecto{
     padding: 16px;
-    background-color:rgb(193, 193, 193);
+    background-color:rgb(85, 137, 149);
     border: 1px solid;
-    border-color: dimgrey;
+    border-color: rgb(72, 122, 114);
     border-radius: 16px;
     margin-top: 16px;
 }
 .proyecto:hover{
- background-color: rgb(118, 117, 117);   
+ background-color: rgb(48, 113, 113);   
 }
 .experiencia{
     padding: 16px;
-    background-color:rgb(212, 212, 212);
+    background-color:rgb(85, 137, 149);
     border: 1px solid;
-    border-color: dimgrey;
+    border-color: rgb(43, 85, 92);
     border-radius: 16px;
     margin-top: 16px;
 }
 .estudios{
     padding: 16px;
-    background-color:rgb(212, 212, 212);
+    background-color:rgb(85, 137, 149);
     border: 1px solid;
-    border-color: dimgrey;
+    border-color: rgb(43, 85, 92);
     border-radius: 16px;
     margin-top: 16px; 
 }
 .habilidades{
     width: fit-content;
     padding: 8px;
+    border-radius: 16px;
+    border: 3px solid rgb(63, 45, 20);
+    background-color: rgb(134, 80, 54);
+    color: white;
+}
+.habilidades_texto{
+    width: fit-content;
+    margin: 0px;
 }
 .empresa{
     font-weight: 600;
@@ -97,4 +106,22 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    width: fit-content;
+}
+.idiomas{
+    width: fit-content;
+    padding: 8px;
+    border-radius: 16px;
+    border: 3px solid rgb(63, 45, 20);
+    background-color: rgb(134, 80, 54);
+    color: white;
+}
+.envoltura-idiomas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: fit-content;
+}
+.color_p{
+    color: white
 }
