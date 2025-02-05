@@ -19,7 +19,6 @@ console.log(projects)
 		<div class="hero">
 			<article class="hero">
 				<h1 class="nombre">{meData.name}</h1>
-				<h2 class="info">Info:</h2>
 				<p class="bio">{meData.descripcion}</p>
 			</article>
 		</div>
@@ -52,9 +51,9 @@ console.log(projects)
 		<h2 class="color_p">Experiencia:</h2>
 		{meData.experiencia.map((exp) => (
 			<article class="experiencia">
-			<p class="empresa">{meData.experiencia[0].nombreEmpresa}</p>
-			<p class="puesto">Puesto de trabajo: {meData.experiencia[0].puesto}</p>
-			<p class="tiempo">Tiempo en la empresa: {meData.experiencia[0].tiempo}</p>
+			<p class="empresa">{exp.nombreEmpresa}</p>
+			<p class="puesto">Puesto de trabajo: {exp.puesto}</p>
+			<p class="tiempo">Tiempo en la empresa: {exp.tiempo}</p>
 			</article>
 		))}
 	</section>
@@ -63,13 +62,14 @@ console.log(projects)
 	<div class="envoltura-habilidad">
 	{meData.pros.map((hab) => (
 		<article class="habilidades">
-		<p class="habilidades_texto">{hab.habilidades}</p>
+			<p class="habilidades_texto">{hab.habilidades}</p>
 		</article>
 	))}
 	</div>
 	<h3 class="color_p">Idiomas:</h3>
-	<p class="idiomas">{meData.idiomas[0].idioma}</p>
-	<p class="idiomas">{meData.idiomas[1].idioma}</p>
+		{meData.idiomas.map((idioma) =>( 
+			<p class="idiomas">{idioma.idioma}</p>
+		))}
 	</section>
 	<Footer />
 	

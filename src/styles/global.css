@@ -1,11 +1,11 @@
 html{
     font-family: "Times New Roman";
-    background-color:rgb(12, 19, 20);
+    background-color:rgb(18, 28, 30);
 }
 
 section{
     max-width: 900px;
-    margin-top: 84px;
+    padding-top: 84px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -20,6 +20,15 @@ section{
     color: white;
     height: fit-content;
     border-radius: 32px;
+    
+}
+.hero2{
+    padding: 16px;
+    background-color:rgb(111, 74, 56);
+    color: white;
+    height: fit-content;
+    border-radius: 16px;
+    margin-top: 16px; 
 }
 
 .hero h1{
@@ -35,16 +44,19 @@ section{
 .nombre{
     font-size: 55px;
     line-height: 100%;
+    
 }
 .info{
     font-size: 32px;
     line-height: 120%;
     align-items: center;
+    color: white;
 }
 .bio{
     font-size: 18px;
     font-weight: 300;
     line-height: 150%;
+    text-align: justify;
 }
 .enlace-proyecto{
     text-decoration: none;
